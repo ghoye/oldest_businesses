@@ -1,8 +1,11 @@
 # oldest_businesses
 
-An important part of business is planning for the future and ensuring that the company survives changing market conditions. Some businesses do this really well and last for hundreds of years.</p>
-<p>BusinessFinancing.co.uk <a href="https://businessfinancing.co.uk/the-oldest-company-in-almost-every-country">researched</a> the oldest company that is still in business in (almost) every country and compiled the results into a dataset. In this project, you'll explore that dataset to see what they found.</p>
-<p>The database contains three tables.</p>
+An important part of business is planning for the future and ensuring that the company survives changing market conditions. Some businesses do this really well and last for hundreds of years.
+
+BusinessFinancing.co.uk <a href="https://businessfinancing.co.uk/the-oldest-company-in-almost-every-country">researched</a> the oldest company that is still in business in (almost) every country and compiled the results into a dataset. In this project, I explored that dataset to see what they found.
+
+The database contains three tables:
+
 <h3 id="categories"><code>categories</code></h3>
 <table>
 <thead>
@@ -84,4 +87,5 @@ An important part of business is planning for the future and ensuring that the c
 </tr>
 </tbody>
 </table>
-<p>Let's begin by looking at the range of the founding years throughout the world.</p>
+
+Let's begin by looking at the range of the founding years throughout the world.
