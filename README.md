@@ -1,8 +1,8 @@
 # oldest_businesses
 
-An important part of business is planning for the future and ensuring that the company survives changing market conditions. Some businesses do this really well and last for hundreds of years.
+A key element of any successful business is foresight. That is, a company must ensure that it can survive whatever changes that may occur in the market. Some businesses are not able to weather the economic storms, and others have continued to operate for hundreds of years.
 
-BusinessFinancing.co.uk <a href="https://businessfinancing.co.uk/the-oldest-company-in-almost-every-country">researched</a> the oldest company that is still in business in (almost) every country and compiled the results into a dataset. In this project, I explored that dataset to see what they found.
+BusinessFinancing.co.uk <a href="https://businessfinancing.co.uk/the-oldest-company-in-almost-every-country">researched</a> the oldest company that is still in business in (almost) every country in the world and compiled the results into a dataset. In this project, I explored their findings.
 
 The database contains three tables:
 
@@ -88,4 +88,6 @@ The database contains three tables:
 </tbody>
 </table>
 
-Let's begin by looking at the range of the founding years throughout the world.
+From the dataset, I discovered that the oldest business still in operation is Kongō Gumi, a Japanese construction company founded in 578 A.D. The latest "oldest" business was founded in 1999, namely the Meridian Corporation in Kosovo. Other businesses founded before the year 1000 include the St. Peter Stifts Kulinarium in Austria (803); the Royal Mint in Wales (886); and Sean's Bar in Ireland (900). Of the 19 categories (see <i>categories.csv</i> for more details), banking and finance boasts the largest number of businesses (37), followed by breweries (22) and transportation (19).
+
+Created as part of the DataCamp project <a href="https://app.datacamp.com/learn/projects/worlds_oldest_businesses/guided/SQL">"What and Where are the World's Oldest Businesses"</a> by Richie Cotton.
