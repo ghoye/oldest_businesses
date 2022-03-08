@@ -2,11 +2,11 @@
 
 postgresql:///oldestbusinesses
  
--- Select the oldest and newest founding years from 'businesses'
+-- What are the oldest and newest founding years?
 
 SELECT MIN(year_founded), MAX(year_founded) FROM businesses;
 
--- Select all columns for oldest and newest businesses
+-- Which businesses were founded in those years?
 
 SELECT * FROM businesses
     WHERE year_founded =
@@ -16,18 +16,17 @@ SELECT * FROM businesses
         (SELECT MAX(year_founded)
         FROM businesses);
 
--- Get the count of rows in 'businesses' where the founding year was before 1000 AD
+-- How many businesses were founded before the year 1000?
 
 SELECT COUNT(*) FROM businesses WHERE year_founded < 1000;
 
--- Select all columns where the founding year was before 1000, arrange the results from oldest to newest
+-- Which businesses were founded before the year 1000?
 
 SELECT * FROM businesses 
     WHERE year_founded < 1000 
     ORDER BY year_founded;
 
--- Select business name, founding year, and country code from businesses; and category from categories
--- where the founding year was before 1000, arranged from oldest to newest
+-- What kind of businesses are those?
 
 SELECT business, year_founded, country_code, category
     FROM businesses as bus
@@ -36,8 +35,7 @@ SELECT business, year_founded, country_code, category
     WHERE year_founded < 1000
     ORDER BY year_founded;
 
--- Select the category and count of category (as "n") arranged by descending count, 
--- limited to 10 most common categories
+-- Which categories are the most prominent among the world's oldest businesses?
 
 SELECT category, COUNT(category) as n
     FROM categories as cat
@@ -47,8 +45,7 @@ SELECT category, COUNT(category) as n
     ORDER BY n desc
     limit 10;
 
--- Select the oldest founding year (as "oldest") from businesses, and continent from countries
--- for each continent, ordered from oldest to newest 
+-- What is the earliest founding year by continent? 
 
 SELECT continent, MIN(year_founded) as oldest 
     FROM businesses as bus
@@ -57,7 +54,7 @@ SELECT continent, MIN(year_founded) as oldest
     GROUP BY continent
     ORDER BY oldest;
 
--- Select the business, founding year, category, country, and continent
+-- All businesses, including year founded, country, continent, and type of business
 
 SELECT business, year_founded, country, continent, category
     FROM businesses as bus
@@ -67,7 +64,7 @@ SELECT business, year_founded, country, continent, category
     ON bus.category_code = cat.category_code
     ORDER BY year_founded;
 
--- Count the number of businesses in each continent and category
+-- Number of businesses in each continent and category
 
 SELECT continent, category, COUNT(business) as n
     FROM businesses as bus
@@ -78,7 +75,7 @@ SELECT continent, category, COUNT(business) as n
     GROUP BY continent, category
     ORDER BY continent, n DESC;
 
--- Repeat that previous query, filtering for results having a count greater than 5
+-- Category totals by continent with high count (> 5)
 
 SELECT continent, category, COUNT(*) as n
     FROM businesses as bus
