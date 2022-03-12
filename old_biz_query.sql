@@ -1,7 +1,3 @@
--- Connect to database
-
-postgresql:///oldestbusinesses
- 
 -- What are the oldest and newest founding years?
 
 SELECT MIN(year_founded), MAX(year_founded) FROM businesses;
