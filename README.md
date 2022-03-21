@@ -1,6 +1,6 @@
 # oldest_businesses
 
-A key element of any successful business is foresight. That is, a company must ensure that it can survive whatever changes that may occur in the market. Some businesses are not able to weather the economic storms, and others have continued to operate for hundreds of years.
+A key element of any successful business is foresight. In other words, a company must ensure that it can survive whatever changes that may occur in the market. Some businesses are not able to weather the economic storms, whereas others have continued to operate for hundreds of years.
 
 BusinessFinancing.co.uk <a href="https://businessfinancing.co.uk/the-oldest-company-in-almost-every-country">researched</a> the oldest company that is still in business in (almost) every country in the world and compiled the results into a dataset. In this project, I explored their findings.
 
